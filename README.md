@@ -8,11 +8,17 @@ Analyze Swiggy's Bangalore outlet data to understand the city's food delivery la
 
 ## 🔍 Key Insights
 
-<!-- Open your notebook and replace these with your 3-4 actual findings, e.g.: -->
-- [Area] has the highest concentration of top-rated (4.5+) restaurants
-- Average cost for two across Bangalore is ₹[X], with [cuisine] being the most listed cuisine
-- [Your finding about ratings vs price relationship]
-- [One more insight from your charts]
+- **Ratings are strong platform-wide** — restaurants cluster between 4.0 and 4.3 (median 4.1, max 4.8)
+- **HSR is Bangalore's most expensive area** for delivery — median cost for two of ₹350 (up to ₹800), vs ₹300 in BTM and ₹254 in Koramangala
+- **Price ≠ quality**: correlation between cost and rating is near zero (0.04). The top-rated restaurants (4.5+) average just ₹262 for two, while ₹600–800 outlets sit at a mediocre ~4.1 — customers reward affordable quality
+- **North Indian (14.2%), Chinese (12.7%) and South Indian (8.5%)** dominate listings, with the leading cuisine flipping by area (Chinese leads BTM & Koramangala; North Indian leads HSR)
+- **Data cleaning mattered**: ratings arrived as text with `'--'` for missing values, and costs carried a `₹` prefix — both required careful conversion before any analysis was valid
+
+## 📊 Visualizations
+
+![Rating Distribution](images/rating_distribution.png)
+![Cost vs Rating](images/cost_vs_rating.png)
+![Top Cuisines](images/top_cuisines.png)
 
 ## 🛠️ Tech Stack
 
